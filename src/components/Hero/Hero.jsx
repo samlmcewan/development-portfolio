@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import Typing from 'react-typing-animation';
 
 const Header = () => {
 	const { hero } = useContext(PortfolioContext);
@@ -10,6 +11,24 @@ const Header = () => {
 
 	const [ isDesktop, setIsDesktop ] = useState(false);
 	const [ isMobile, setIsMobile ] = useState(false);
+
+	const AnimatedTypingComponent = () => (
+		<Typing loop={true}>
+			<h1 className="hero-title">
+				Hello
+				<span className="text-color-main"> ClearSky Logic!</span>
+				<br />
+				<br />
+				<Typing.Delay ms={1500} />
+				I'm <span className="text-color-main">Sam McEwan</span>(BDES)
+				<br />
+				<Typing.Delay ms={200} />
+				<Typing.Speed ms={25} />
+				Web Developer + Graphic Designer
+				<Typing.Reset count={0} delay={5000} />
+			</h1>
+		</Typing>
+	);
 
 	useEffect(() => {
 		if (window.innerWidth > 769) {
@@ -25,15 +44,9 @@ const Header = () => {
 		<section id="hero" className="jumbotron">
 			<Container>
 				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-					<h1 className="hero-title">
-						{title} <span className="text-color-main">{name}</span>
-						<span> {degree}</span>
-						<br />
-						{subtitle}
-						<br /> {location}
-					</h1>
+					<AnimatedTypingComponent />
 				</Fade>
-				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
+				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={10000} distance="30px">
 					<p className="hero-cta">
 						<span className="cta-btn cta-btn--hero">
 							<Link to="about" smooth duration={1000}>
