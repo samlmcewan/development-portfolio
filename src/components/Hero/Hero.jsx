@@ -20,7 +20,7 @@ const Header = () => {
 				<span className="text-color-main"> ClearSky Logic!</span>
 				<br />
 				<br />
-				<Typing.Delay ms={1500} />
+				<Typing.Delay ms={1000} />
 				I'm <span className="text-color-main">Sam McEwan</span>(BDES)
 				<br />
 				<Typing.Delay ms={200} />
