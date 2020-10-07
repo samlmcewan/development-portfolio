@@ -15,6 +15,7 @@ const Header = () => {
 	const AnimatedTypingComponent = () => (
 		<Typing loop={true}>
 			<h1 className="hero-title">
+				<Typing.Speed ms={100} />
 				Hello
 				<span className="text-color-main"> ClearSky Logic!</span>
 				<br />
@@ -23,7 +24,7 @@ const Header = () => {
 				I'm <span className="text-color-main">Sam McEwan</span>(BDES)
 				<br />
 				<Typing.Delay ms={200} />
-				<Typing.Speed ms={25} />
+				<Typing.Speed ms={50} />
 				Web Developer + Graphic Designer
 				<Typing.Reset count={0} delay={5000} />
 			</h1>
@@ -46,7 +47,7 @@ const Header = () => {
 				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
 					<AnimatedTypingComponent />
 				</Fade>
-				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={10000} distance="30px">
+				<Fade left={isDesktop} bottom={isMobile} duration={1000} delay={6500} distance="30px">
 					<p className="hero-cta">
 						<span className="cta-btn cta-btn--hero">
 							<Link to="about" smooth duration={1000}>
