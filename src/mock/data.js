@@ -35,6 +35,7 @@ export const projectsData = [
 		info: 'Work-in-progress e-commerce app made with React and Firebase.',
 		info2:
 			'Features a checkout, payments with Stripe, authentication and user accounts with email or Google sign in.',
+		info3: 'Not yet optimised for mobile devices.',
 		url: 'https://crinkle.herokuapp.com/',
 		repo: 'https://github.com/samlmcewan/react-ecommerce-app'
 	},
@@ -53,7 +54,7 @@ export const projectsData = [
 		img: 'vapedrop.jpg',
 		title: 'Vapedrop',
 		info: 'Redesign of an e-commerce site for a vape shop based in Leith.  ',
-		info2: 'As the old site used Wordpress linked to the shops POS, I kept most of the basic functionality.',
+		info2: `As the old site used Wordpress linked to the shop's POS, I kept most of the basic functionality.`,
 		info3:
 			'I implemented new plugins for discount rules and sliders and rebranded the site with a new Wordpress theme, layout and graphics.',
 		url: 'https://vapedropuk.com/',
