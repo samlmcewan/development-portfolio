@@ -15,18 +15,18 @@ const Header = () => {
 	const AnimatedTypingComponent = () => (
 		<Typing loop={true}>
 			<h1 className="hero-title">
-				<Typing.Speed ms={100} />
+				<Typing.Speed ms={50} />
 				Hello!
 				<br />
 				<br />
 				<Typing.Delay ms={1000} />
-				<Typing.Speed ms={50} />
+				<Typing.Speed ms={75} />
 				I'm <span className="text-color-main">Sam McEwan</span>(BDES)
 				<br />
 				<Typing.Delay ms={200} />
 				<Typing.Speed ms={50} />
 				Web Developer + Graphic Designer
-				<Typing.Reset count={0} delay={5050} />
+				<Typing.Reset count={0} delay={5000} />
 			</h1>
 		</Typing>
 	);
