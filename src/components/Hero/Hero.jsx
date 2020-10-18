@@ -15,9 +15,9 @@ const Header = () => {
 	const AnimatedTypingComponent = () => (
 		<Typing loop={true}>
 			<h1 className="hero-title">
-				<Typing.Speed ms={150} />
-				Hello!
-				<span className="text-color-main">Welcome to my portfolio</span>
+				<Typing.Speed ms={200} />
+				Hello! <Typing.Delay ms={200} />
+				<span className="text-color-main"> Welcome to my portfolio</span>
 				<br />
 				<br />
 				<Typing.Delay ms={1000} />
