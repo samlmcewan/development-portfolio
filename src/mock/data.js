@@ -85,7 +85,7 @@ export const footerData = {
 		{
 			id: nanoid(),
 			name: 'linkedin',
-			url: 'https://www.linkedin.com/in/sam-mcewan-521b46184/'
+			url: 'https://www.linkedin.com/in/sam-lewis-mcewan/'
 		},
 		{
 			id: nanoid(),
