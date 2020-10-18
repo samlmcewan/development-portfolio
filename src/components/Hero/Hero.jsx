@@ -17,7 +17,7 @@ const Header = () => {
 			<h1 className="hero-title">
 				<Typing.Speed ms={200} />
 				Hello! <Typing.Delay ms={200} />
-				<span className="text-color-main"> Welcome to my portfolio</span>
+				<span className="text-color-main"> Welcome</span> to my portfolio
 				<br />
 				<br />
 				<Typing.Delay ms={1000} />
